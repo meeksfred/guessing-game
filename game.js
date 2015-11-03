@@ -35,5 +35,30 @@ var userResponse3 = prompt("Is pizza my favorite food? (yes or no)").toLowerCase
     alert("No silly, Pizza is absolutely the greatest food.");
   };
 
-alert("Congratulations! Your score was " + finalScore + " out of 3.")
+var x = 7
+var chances = 3
+var numHint = 'Now its time to guess my favorite number. Go ahead, any number between 1-50.'
+
+while (chances > 0) {
+  var guess = prompt(numHint + ' You have ' + chances + ' guesses remaining.');
+  if (!guess) break;
+  guess = Number(guess);
+  if (guess === x) {
+    alert('Great Job! ' + x + ' is indeed my favorite number.');
+    chances = 0;
+    finalScore++;
+}   else {
+    numHint = 'Incorrect.';
+    if (guess > x)
+      numHint += ' Too large! Try again.';
+    if (guess < x)
+      numHint += ' Too small! Try again.';
+    chances = chances - 1;
+    if (chances === 0)
+      alert("My number was actually 7. Good try!");
+  }
+}
+
+
+alert("Congratulations! Your score was " + finalScore + " out of 4.")
 
