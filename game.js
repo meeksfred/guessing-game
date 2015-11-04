@@ -59,7 +59,7 @@ while (chances > 0) {
   }
 };
 
-var userResponse4 = prompt('Is Appa the coolest flying bison in existence?').toLowerCase();
+var userResponse4 = prompt('Is Appa the coolest flying bison in existence? (yes or no)').toLowerCase();
   if ((userResponse4 === 'yes') || (userResponse4 === 'y')) {
     console.log('User is correct.');
     alert('Correct! Appa is the coolest, and only flying bison in existence');
