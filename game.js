@@ -57,8 +57,18 @@ while (chances > 0) {
     if (chances === 0)
       alert("My number was actually 7. Good try!");
   }
-}
+};
+
+var userResponse4 = prompt('Is Appa the coolest flying bison in existence?').toLowerCase();
+  if ((userResponse4 === 'yes') || (userResponse4 === 'y')) {
+    console.log('User is correct.');
+    alert('Correct! Appa is the coolest, and only flying bison in existence');
+    finalScore++;
+  } else {
+    console.log('User is incorrect.');
+    alert('Incorrect. Appa is absolutely the coolest flying bison in the world.');
+  };
 
 
-alert("Congratulations! Your score was " + finalScore + " out of 4.")
+alert("Congratulations! Your score was " + finalScore + " out of 5.")
 
