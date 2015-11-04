@@ -69,6 +69,16 @@ var userResponse4 = prompt('Is Appa the coolest flying bison in existence?').toL
     alert('Incorrect. Appa is absolutely the coolest flying bison in the world.');
   };
 
+var userResponse5 = Number(prompt('How many licks does it officially take to get to the center of a Tootsie Pop? (enter a number)'));
+  if (userResponse5 === 364) {
+    console.log('User is correct.');
+    alert('Correct! Holy cow, great guessing.');
+    finalScore++;
+  } else {
+    console.log('User is incorrect.');
+    alert('Incorrect. The official unofficial number is 364. You were ' + (364 - Number(userResponse5)) + ' licks off.');
+  };
 
-alert("Congratulations! Your score was " + finalScore + " out of 5.")
+
+alert("Congratulations! Your score was " + finalScore + " out of 6.")
 
