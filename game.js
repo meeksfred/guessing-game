@@ -67,7 +67,6 @@ function questionFour() {
 
   while (chances > 0) {
     var guess = prompt(numHint + ' You have ' + chances + ' guesses remaining.');
-    if (!guess) break;
     guess = Number(guess);
     if (guess === x) {
       console.log('User is correct.');
@@ -82,6 +81,9 @@ function questionFour() {
       }
         else if (guess < x) {
         numHint += ' Too small! Try again.';
+      }
+      else {
+        alert("I'm sorry, that doesn't appear to be a number.");
       }
       chances = chances - 1;
       if (chances === 0) {
