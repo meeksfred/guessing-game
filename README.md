@@ -15,5 +15,8 @@ Update 11/8/15:
   No pair programming, just me making changes.
   Add pictures for each corresponding right or wrong answer.
 
+Update 11/10/15:
+  Add a little color to page. Corresponding green/red for right/wrong answers.
+
 Smiley and Frowney faces from http://www.clipartpanda.com/
 
