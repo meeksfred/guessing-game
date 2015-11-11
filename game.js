@@ -130,7 +130,7 @@ function questionSix() {
   } else {
     console.log('User is incorrect.');
     document.getElementById('answerSix').innerHTML = "Incorrect. The official unofficial number is 364. You were " + (364 - Number(userResponse5)) + " licks off.";
-    document.getElementById('rightOrWrongSix').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('rightOrWrongSix').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
     document.getElementById('answerSix').className = 'incorrect';
   }
 };
