@@ -20,10 +20,12 @@ function questionOne() {
     finalScore++;
     document.getElementById('answerOne').innerHTML = "You are right! I was actually born in the state of Washington.";
     document.getElementById('rightOrWrongOne').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerOne').className = "correct";
     } else {
     console.log("User is incorrect");
     document.getElementById('answerOne').innerHTML = "Incorrect. I was born in Washington, but most of my family does live in Iowa.";
     document.getElementById('rightOrWrongOne').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
+    document.getElementById('answerOne').className = "incorrect";
   }
 };
 
@@ -35,12 +37,12 @@ function questionTwo() {
     finalScore++;
     document.getElementById('answerTwo').innerHTML = "Correct! America's and Max's past time.";
     document.getElementById('rightOrWrongTwo').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerTwo').className = 'correct';
   } else {
-    console.log(smileyPic);
-    console.log('---');
     console.log("User is incorrect");
     document.getElementById('answerTwo').innerHTML = "Incorrect. It actually is baseball, however I do love all sports.";
     document.getElementById('rightOrWrongTwo').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
+    document.getElementById('answerTwo').className = 'incorrect';
   }
 };
 
@@ -52,10 +54,12 @@ function questionThree() {
     finalScore++;
     document.getElementById('answerThree').innerHTML = "Of course! Pizza is the greatest!";
     document.getElementById('rightOrWrongThree').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerThree').className = 'correct';
   } else {
     console.log("User is incorrect");
     document.getElementById('answerThree').innerHTML = "No silly, Pizza is absolutely the greatest food.";
     document.getElementById('rightOrWrongThree').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
+    document.getElementById('answerThree').className = 'incorrect';
   }
 };
 
@@ -74,6 +78,7 @@ function questionFour() {
       finalScore++;
       document.getElementById('answerFour').innerHTML = "Great Job! " + x + " is indeed my favorite number.";
       document.getElementById('rightOrWrongFour').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+      document.getElementById('answerFour').className = 'correct';
     } else {
       numHint = 'Incorrect.';
         if (guess > x) {
@@ -89,6 +94,7 @@ function questionFour() {
       if (chances === 0) {
       document.getElementById('answerFour').innerHTML = "My number was actually 7. Good try!";
       document.getElementById('rightOrWrongFour').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
+      document.getElementById('answerFour').className = 'incorrect';
       console.log('User is incorrect.');
       }
     }
@@ -103,10 +109,12 @@ function questionFive() {
     finalScore++;
     document.getElementById('answerFive').innerHTML = "Correct! Appa is the coolest, and only flying bison in existence.";
     document.getElementById('rightOrWrongFive').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerFive').className = 'correct';
   } else {
     console.log('User is incorrect.');
     document.getElementById('answerFive').innerHTML = "Incorrect. Appa is absolutely the coolest flying bison in the world.";
     document.getElementById('rightOrWrongFive').innerHTML = "<img src='images/frowney.jpg' height='100' width='100'>";
+    document.getElementById('answerFive').className = 'incorrect';
   }
 };
 
@@ -118,10 +126,12 @@ function questionSix() {
     finalScore++;
     document.getElementById('answerSix').innerHTML = "Correct! Holy cow, great guessing.";
     document.getElementById('rightOrWrongSix').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerSix').className = 'correct';
   } else {
     console.log('User is incorrect.');
     document.getElementById('answerSix').innerHTML = "Incorrect. The official unofficial number is 364. You were " + (364 - Number(userResponse5)) + " licks off.";
     document.getElementById('rightOrWrongSix').innerHTML = "<img src='images/smiley.jpg' height='100' width='100'>";
+    document.getElementById('answerSix').className = 'incorrect';
   }
 };
 
