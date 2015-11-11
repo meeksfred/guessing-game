@@ -1,0 +1,11 @@
+* {
+  background-color: #FFCC99;
+}
+
+.correct {
+  background-color: #66FF33;
+}
+
+.incorrect {
+  background-color: #FF1A1A;
+}
