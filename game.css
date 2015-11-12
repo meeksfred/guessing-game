@@ -9,3 +9,21 @@
 .incorrect {
   background-color: #FF1A1A;
 }
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  font-family: Georgia;
+  font-size: 95%;
+}
+
+h4:first-letter {
+  font-size: 150%;
+}
+
+
