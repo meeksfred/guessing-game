@@ -18,5 +18,9 @@ Update 11/8/15:
 Update 11/10/15:
   Add a little color to page. Corresponding green/red for right/wrong answers.
 
+Update 11/12/15:
+  Move questions and answers into arrays.
+  Style up the page a bit.
+
 Smiley and Frowney faces from http://www.clipartpanda.com/
 
